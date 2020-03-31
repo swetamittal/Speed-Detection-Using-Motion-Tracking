@@ -15,4 +15,4 @@ d) Speed Estimation.
 
 # 1. Image Acquisition
 
-In this project, we have used VideoReader for reading the content of our video and saved all the frames in it in a specified folder. Later these frames are accessed one at a time and the algorithm is applied on them.
+In this project, VideoReader is used for reading the content of our video and saved all the frames in it in a specified folder. Later these frames are accessed one at a time and the algorithm is applied on them.
