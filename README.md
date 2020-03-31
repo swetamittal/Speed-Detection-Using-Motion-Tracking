@@ -5,13 +5,14 @@ Moving object detection is a computer technology related to computer vision and 
 # METHODOLOGY:
 
 Vehicle tracking and speed estimation for traffic surveillance system is designed to track the vehicle
-position and calculate its moving speed.
+position and calculate its moving speed. The video feed provided by the camera is analyzed frame by frame. A boundng box  is drawn bounding the cars detected in the frame. The centroid of bounding box in each frame is used for calculating the total distance travelled by the vehicle. Also the time is the inverse of the frames per second. Finally, the speed is caluclated as the ratio of ditance to time.
+
 This system consists of 4 major steps:
 a) Image Acquisition
 b) Image Background Subtraction
 c) Object Detection
 d) Speed Estimation.
 
+# 1. Image Acquisition
 
-
-The video feed provided by the camera is analyzed frame by frame. A boundng box  is drawn bounding the cars detected in the frame. The centroid of bounding box in each frame is used for calculating the total distance travelled by the vehicle. Also the time is the inverse of the frames per second. Finally, the speed is caluclated as the ratio of ditance to time.
+In this project, we have used VideoReader for reading the content of our video and saved all the frames in it in a specified folder. Later these frames are accessed one at a time and the algorithm is applied on them.
