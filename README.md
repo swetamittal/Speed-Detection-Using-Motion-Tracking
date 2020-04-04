@@ -16,3 +16,7 @@ d) Speed Estimation.
 # 1. Image Acquisition
 
 In this project, VideoReader is used for reading the content of our video and saved all the frames in it in a specified folder. Later these frames are accessed one at a time and the algorithm is applied on them.
+
+# 2. Image Background Subtraction
+
+Moving object detection involves locating objects in the frame of a video sequence. Every tracking method requires an object detection mechanism either in every frame or when the object first appears in the video.
