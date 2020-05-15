@@ -19,4 +19,5 @@ In this project, VideoReader is used for reading the content of our video and sa
 
 # 2. Image Background Subtraction
 
-Moving object detection involves locating objects in the frame of a video sequence. Every tracking method requires an object detection mechanism either in every frame or when the object first appears in the video.
+Moving object detection involves locating objects in the frame of a video sequence. Every tracking method requires an object detection mechanism either in every frame or when the object first appears in the video. A good background subtraction should be able to
+overcome the problem of varying illumination condition, background clutter, shadows, camouflage, bootstrapping and at the same time motion segmentation of foreground object should be done at the real time.
