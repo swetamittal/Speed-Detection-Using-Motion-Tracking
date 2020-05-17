@@ -21,3 +21,9 @@ In this project, VideoReader is used for reading the content of our video and sa
 
 Moving object detection involves locating objects in the frame of a video sequence. Every tracking method requires an object detection mechanism either in every frame or when the object first appears in the video. A good background subtraction should be able to
 overcome the problem of varying illumination condition, background clutter, shadows, camouflage, bootstrapping and at the same time motion segmentation of foreground object should be done at the real time.
+
+# 3. Object Detection 
+## 3.1 Blob Analysis
+
+For image processing, a blob is defined as a region of connected pixels. Blob analysis is the identification and study of these regions in an image. The algorithms discern pixels by their value and place them in one of two categories: the foreground (typically pixels with a nonzero value) or the background (pixels with a zero value).
+Once the input video has gone through all the stages of thresholding and filtering, it is put through the blob analysis block. Blob analysis has the functionality to produce many forms of statistics, which is crucial for detecting and tracking. For now, the bounding box option is checked. A bounding box is an M-by-4 matrix of [x y height width] bounding box coordinates, where M represents the number of blobs and [x y] represents the upper left corner of the bounding box. As the blob moves, the bounding box will follow.
